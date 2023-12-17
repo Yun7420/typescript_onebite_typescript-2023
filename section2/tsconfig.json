@@ -9,7 +9,11 @@
     "strictNullChecks": true,
     "noImplicitAny": true,
     "allowJs": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+
+    // ... 추가 옵션
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
   },
 
   "ts-node": {

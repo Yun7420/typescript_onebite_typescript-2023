@@ -1,35 +1,34 @@
-// number
-let nunA: number = 123;
-let nunB: number = -123;
-let nunC: number = 0.123;
-let nunD: number = -0.123;
-let nunE: number = Infinity;
-let nunF: number = -Infinity;
-let nunG: number = NaN;
+/*
+  원시 타입(Primitive Type)
+  -> 하나의 값만 저장하는 타입
+*/
 
-// string
-let strA: string = "hello";
-let strB: string = "hello";
-let strC: string = `hello`;
-let strD: string = `hello ${nunA}`;
+// number 타입
+const nunA: number = 1;
+const nunB: number = -1;
+const nunC: number = 0.1;
+const nunD: number = -0.1;
+const nunE: number = Infinity;
+const nunF: number = -Infinity;
+const nunG: number = NaN; // (Not a Number)
 
-// boolean
-let boolA: boolean = true;
-let boolB: boolean = false;
+// string 타입
+const strA: string = "Hello";
+const strB: string = "Hello";
+const strC: string = `Hello`;
+const strD: string = `Hello ${nunA}`;
 
-// null
-let nullA: null = null;
+// boolean 타입
+const boolA: boolean = true;
+const boolB: boolean = false;
 
-// undefined
-let undeA: undefined = undefined;
+// null 타입
+const nullA: null = null;
 
-// 리터럴 타입
-// 리터럴 -> 값
-let num_A: 10 = 10;
-num_A = 10;
+// undefined 타입
+const undeA: undefined = undefined;
 
-let str_A: "Hello" = "Hello";
-str_A = "Hello";
-
-let bool_A: true = true;
-bool_A = true;
+// 리터럴(값) 타입
+const num_R: 10 = 10; // num_R = 10;
+const str_R: "Hello" = "Hello"; // str_R = "Hello";
+const bool_R: true = true; // bool_R = true;
