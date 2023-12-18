@@ -3,7 +3,7 @@
 */
 
 let a = 10;
-let b = "hello";
+let b = "Hello";
 let c = {
   id: 1,
   name: "홍길동",
@@ -13,21 +13,22 @@ let c = {
   url: ["https://www.naver.com/"],
 };
 
-let { id, name, profile, url } = c;
+let { id, name, profile, url } = c; // 객체 구조분해 할당 추론
 
-let [one, two, three] = [1, "Hello", true];
+let [one, two, three] = [1, "Hello", true]; // 배열 구조분해 할당 추론
 
-function func(message = "string") {
-  return "hello";
+function func(message = "Hello") {
+  return message;
 }
 
+// 암묵적 any타입 -> any타입의 진화
 let d;
 d = 10;
 d.toFixed();
 
-d = "hello";
+d = "Hello";
 d.toUpperCase();
 
-const num = 10;
-const str = "hello";
-let arr = [1, "string"];
+const num = 10; // 리터럴 타입
+const str = "Hello"; // 리터럴 타입
+let arr = [1, "Hello"]; // 유니온 타입

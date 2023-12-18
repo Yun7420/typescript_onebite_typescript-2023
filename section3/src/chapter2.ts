@@ -1,5 +1,6 @@
 /*
   Unknown 타입
+  -> 전체 집합 (최상위 타입)
 */
 
 function unknownExam() {
@@ -10,9 +11,9 @@ function unknownExam() {
   let d: unknown = null;
   let e: unknown = undefined;
 
-  // 다운 캐스팅
-  // let unknownA: unknown;
+  let unknownA: unknown;
 
+  // 다운 캐스팅
   // let str: String = unknownA;
   // let num: Number = unknownA;
   // let bool: boolean = unknownA;
@@ -20,6 +21,7 @@ function unknownExam() {
 
 /*
   Never 타입
+  -> 공 집합 (최하위 타입)
 */
 
 function neverExam() {
@@ -40,6 +42,7 @@ function neverExam() {
 
 /*
   Void 타입
+  -> undefined타입의 슈퍼타입
 */
 
 function voidExam() {
@@ -55,6 +58,8 @@ function voidExam() {
 
 /*
   Any 타입
+  -> 치트키 타입
+  -> 어떤 값도 가질 수 있고, 어떤 값에 들어갈 수 있다 (never타입 제외)
 */
 
 function anyExam() {
@@ -66,10 +71,10 @@ function anyExam() {
   // 업 캐스팅
   unknownA = anyA;
   anyA = undefinedA;
-  // anyA = neverA;
+  // anyA = neverA; // 오류
 
   // 다운 캐스팅
   anyA = unknownA;
   undefinedA = anyA;
-  // neverA = anyA;
+  // neverA = anyA; // 오류
 }

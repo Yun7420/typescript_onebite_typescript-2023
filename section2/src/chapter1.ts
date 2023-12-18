@@ -4,31 +4,31 @@
 */
 
 // number 타입
-const nunA: number = 1;
-const nunB: number = -1;
-const nunC: number = 0.1;
-const nunD: number = -0.1;
-const nunE: number = Infinity;
-const nunF: number = -Infinity;
-const nunG: number = NaN; // (Not a Number)
+let nunA: number = 1;
+let nunB: number = -1;
+let nunC: number = 0.1;
+let nunD: number = -0.1;
+let nunE: number = Infinity;
+let nunF: number = -Infinity;
+let nunG: number = NaN; // (Not a Number)
 
 // string 타입
-const strA: string = "Hello";
-const strB: string = "Hello";
-const strC: string = `Hello`;
-const strD: string = `Hello ${nunA}`;
+let strA: string = "Hello";
+let strB: string = "Hello";
+let strC: string = `Hello`;
+let strD: string = `Hello ${nunA}`;
 
 // boolean 타입
-const boolA: boolean = true;
-const boolB: boolean = false;
+let boolA: boolean = true;
+let boolB: boolean = false;
 
 // null 타입
-const nullA: null = null;
+let nullA: null = null;
 
 // undefined 타입
-const undeA: undefined = undefined;
+let undeA: undefined = undefined;
 
 // 리터럴(값) 타입
-const num_R: 10 = 10; // num_R = 10;
-const str_R: "Hello" = "Hello"; // str_R = "Hello";
-const bool_R: true = true; // bool_R = true;
+let num_R: 10 = 10; // num_R = 10;
+let str_R: "Hello" = "Hello"; // str_R = "Hello";
+let bool_R: true = true; // bool_R = true;

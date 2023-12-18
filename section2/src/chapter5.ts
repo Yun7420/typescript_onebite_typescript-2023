@@ -21,19 +21,19 @@ enum Language {
   franch = "fr",
 }
 
-const userA: User = {
+let userA: User = {
   name: "관리자",
   role: Role.ADMIN, // 0번 <- 관리자
   language: Language.korean, // ko
 };
 
-const userB: User = {
+let userB: User = {
   name: "사용자",
   role: Role.USER, // 1번 <- 사용자
   language: Language.english, // en
 };
 
-const userC: User = {
+let userC: User = {
   name: "게스트",
   role: Role.GUEST, // 2번 <- 게스트
   language: Language.franch, // fr

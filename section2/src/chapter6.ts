@@ -7,11 +7,11 @@ anyA = true;
 anyA = {};
 anyA = () => {};
 
-anyA.toUppercase(); // 오류를 발생시키지 않아서 조심히 사용하자!
-anyA.toFixed(); // 오류를 발생시키지 않아서 조심히 사용하자!
+// anyA.toUppercase(); // 오류를 발생시키지 않아서 조심히 사용하자!
+// anyA.toFixed(); // 오류를 발생시키지 않아서 조심히 사용하자!
 
-let numA: number = 10;
-numA = anyA; // 오류를 발생시키지 않아서 조심히 사용하자!
+// let numA: number = 10;
+// numA = anyA; // 오류를 발생시키지 않아서 조심히 사용하자!
 
 // unknown 타입
 let unknownA: unknown;

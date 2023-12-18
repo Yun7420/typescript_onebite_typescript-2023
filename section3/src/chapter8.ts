@@ -39,9 +39,7 @@ function login(user: User) {
     }
 
     case "Guest": {
-      console.log(
-        `${user.name}님 현재까지 ${user.visitCount}번 방문하셨습니다.`
-      );
+      console.log(`${user.name}님 현재까지 ${user.visitCount}번 방문하셨습니다.`);
       break;
     }
   }

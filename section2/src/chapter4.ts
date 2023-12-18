@@ -5,13 +5,13 @@ type User = {
   bio: string;
 };
 
-const userA: User = {
+let userA: User = {
   id: 1,
   name: "홍길동A",
   bio: "안녕하세요",
 };
 
-const userB: User = {
+let userB: User = {
   id: 2,
   name: "홍길동B",
   bio: "안녕하세요",
@@ -25,7 +25,7 @@ type CountryCodes = {
   Franch: string;
 };
 
-const countryCodes: CountryCodes = {
+let countryCodes: CountryCodes = {
   Korea: "ko",
   UnitedState: "us",
   UnitedKingdom: "uk",

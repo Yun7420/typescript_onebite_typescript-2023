@@ -10,38 +10,10 @@
 
 let a: number | string | boolean;
 a = 1;
-a = "hello";
+a = "Hello";
 a = true;
 
-let arr: (number | string | boolean)[] = [1, "hello", true];
-
-type Union1 = Dog | Person;
-
-let union1: Union1 = {
-  name: "",
-  color: "",
-};
-
-let union2: Union1 = {
-  name: "",
-  language: "",
-};
-
-let union3: Union1 = {
-  name: "",
-  color: "",
-  language: "",
-};
-
-// let union4: Union1 = {
-//   name: "",
-// }
-
-/*
-  2. 교집합 타입 - Intersection 타입
-*/
-
-let variable: number & string;
+let arr: (number | string | boolean)[] = [1, "Hello", true];
 
 type Dog = {
   name: string;
@@ -53,9 +25,37 @@ type Person = {
   language: string;
 };
 
+type Union = Dog | Person;
+
+// 가능
+let union1: Union = {
+  name: "",
+  color: "",
+};
+
+let union2: Union = {
+  name: "",
+  language: "",
+};
+
+let union3: Union = {
+  name: "",
+  color: "",
+  language: "",
+};
+
+// 불가능
+// let union4: Union = {
+//   name: "",
+// }
+
+/*
+  2. 교집합 타입 - Intersection 타입
+*/
+
 type Intersection = Dog & Person;
 
-let intersection1: Intersection = {
+let intersection: Intersection = {
   name: "string",
   color: "string",
   language: "string",
