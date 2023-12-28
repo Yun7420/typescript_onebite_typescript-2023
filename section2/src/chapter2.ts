@@ -1,4 +1,6 @@
-// 배열 타입
+/*
+  배열 타입
+*/
 let numArrA: number[] = [1, 2, 3];
 let numArrB: Array<number> = [1, 2, 3]; // 제네릭 타입
 
@@ -18,9 +20,11 @@ let doubleArr: number[][] = [
   [7, 8, 9],
 ];
 
-// 튜플
-// -> 길이와 타입이 고정된 배열
-// -> push(), pop() 메서드를 사용해도 오류가 발생하지 않기 때문에 주의하자!
+/*
+  튜플 타입
+  -> 길이와 타입이 고정된 배열
+  -> push(), pop() 메서드를 사용해도 오류가 발생하지 않기 때문에 주의하자!
+*/
 let tupA: [number, string, boolean] = [1, "Hello", true];
 
 let users: [string, number][] = [

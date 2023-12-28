@@ -28,7 +28,10 @@ let nullA: null = null;
 // undefined 타입
 let undeA: undefined = undefined;
 
-// 리터럴(값) 타입
+/*
+  리터럴(값) 타입
+  -> 정해준 값만 가질 수 있는 타입
+*/
 let num_R: 10 = 10; // num_R = 10;
 let str_R: "Hello" = "Hello"; // str_R = "Hello";
 let bool_R: true = true; // bool_R = true;
